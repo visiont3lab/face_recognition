@@ -15,7 +15,6 @@ sys.path.append('../common')
 from utils.Person import Person
 import utils.Queue as Queue
 from utils.centroidTracker import CentroidTracker
-from utils.csvCreator import CsvCreator
 from utils.facerec import Facerec
 import datetime
 
@@ -24,7 +23,7 @@ myFacerec = Facerec()
 
 if __name__ == '__main__':
 
-    #myFacerec.updateData()
+    myFacerec.updateData()
     #load pickle and nameList
     nameList = myFacerec.getData()
     cap = cv2.VideoCapture(0)

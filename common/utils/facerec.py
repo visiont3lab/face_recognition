@@ -30,8 +30,8 @@ class Facerec():
 
     def setup_frame(self, frame):
         # prepare the frame and cutting
-        #frame = cv2.resize(frame, (1280, 720), interpolation = cv2.INTER_CUBIC)
-        frame = frame[self.yTopCrop:self.yBottomCrop, self.xLeftCrop:self.xRightCrop]
+        frame = cv2.resize(frame, (640, 480), interpolation = cv2.INTER_CUBIC)
+        #frame = frame[self.yTopCrop:self.yBottomCrop, self.xLeftCrop:self.xRightCrop]
         return frame
 
     def updateData(self):

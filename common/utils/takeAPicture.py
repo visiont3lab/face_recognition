@@ -3,8 +3,8 @@ import cv2
 
 if __name__ == '__main__':
     print("Starting webcam...")
-    #cap = cv2.VideoCapture(0)
-    cap = cv2.VideoCapture("rtsp://192.168.0.219:554/media1.sdp")
+    cap = cv2.VideoCapture(0)
+    #cap = cv2.VideoCapture("rtsp://192.168.0.219:554/media1.sdp")
 
     counter = 0
 

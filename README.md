@@ -20,8 +20,8 @@ In particular this repository contains:
 ## Setup
 
 ```
-cd $HOME
-git clone https://github.com/visiont3lab/face_recognition.git
+cd $HOME &&\
+git clone https://github.com/visiont3lab/face_recognition.git && \
 echo "export FACE_RECOGNITION=$HOME/face_recognition" >> $HOME/.bashrc && source $HOME/.bashrc
 ```
 

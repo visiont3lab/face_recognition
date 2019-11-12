@@ -38,7 +38,7 @@ For this reason if you want to make the algorithm able to recognize yourself fir
             --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --device=/dev/video0  \
             -v $FACE_RECOGNITION:/root/home/ws \
-            visiont3lab/deep-learning:face_recognition \
+            visiont3lab/deep-learning:all \
             /bin/bash -c "cd /root/home/ws/common/utils && python3 takeAPicture.py"
     ```
     To take a picture simply press "p" . Around 20 images will be sufficient. Once you have the images create a folder inside common/faces with the name of the person and place inside it the images that are automatically saved into common/faces. Then you are ready to go.
@@ -52,7 +52,7 @@ For this reason if you want to make the algorithm able to recognize yourself fir
             --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --device=/dev/video0  \
             -v $FACE_RECOGNITION:/root/home/ws \
-            visiont3lab/deep-learning:face_recognition \
+            visiont3lab/deep-learning:all \
             /bin/bash -c "cd /root/home/ws/algorithm/ && python3 custom_face_recognition.py"
     ```
     The upper command will start the face recognition algorithm. Feel free to remove or add new images inside the folder common/faces

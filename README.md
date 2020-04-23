@@ -33,7 +33,7 @@ For this reason if you want to make the algorithm able to recognize yourself fir
 
     ```
     xhost +local:docker && \
-        docker run --runtime=nvidia  --rm  \
+        docker run --gpus all --rm  \
             -it --name deep_learning_face_recognition  \
             --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --device=/dev/video0  \
@@ -47,7 +47,7 @@ For this reason if you want to make the algorithm able to recognize yourself fir
 
     ```
     xhost +local:docker && \
-        docker run --runtime=nvidia  --rm  \
+        docker run --gpus all  --rm  \
             -it --name deep_learning_face_recognition  \
             --env="DISPLAY=$DISPLAY" --env="QT_X11_NO_MITSHM=1" \
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" --device=/dev/video0  \
